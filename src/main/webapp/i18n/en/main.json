@@ -1,0 +1,9 @@
+{
+    "main": {
+        "title": "Welcome!",
+        "subtitle": "This is warehouse. It allows you to check product availability and make orders.",
+        "logged": {
+            "message": "You are logged in as user \"{{username}}\"."
+        }
+    }
+}

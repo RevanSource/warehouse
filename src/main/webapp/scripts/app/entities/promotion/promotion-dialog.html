@@ -1,0 +1,86 @@
+
+<form name="editForm" role="form" novalidate ng-submit="save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="clear()">&times;</button>
+        <h4 class="modal-title" id="myPromotionLabel" translate="warehouseApp.promotion.home.createOrEditLabel">Create or edit a Promotion</h4>
+    </div>
+    <div class="modal-body">
+        <jh-alert-error></jh-alert-error>
+        <div class="form-group">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="promotion.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="warehouseApp.promotion.name" for="field_name">Name</label>
+            <input type="text" class="form-control" name="name" id="field_name"
+                    ng-model="promotion.name"
+                    required />
+            <div ng-show="editForm.name.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.name.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="warehouseApp.promotion.dateFrom" for="field_dateFrom">DateFrom</label>
+            <input id="field_dateFrom" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="promotion.dateFrom" is-open="datePickerForDateFrom.status.opened"
+            required/>
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForDateFromOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+            <div ng-show="editForm.dateFrom.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.dateFrom.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.dateFrom.$error.ZonedDateTimelocal" translate="entity.validation.ZonedDateTimelocal">
+                    This field should be a date and time.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="warehouseApp.promotion.dateTo" for="field_dateTo">DateTo</label>
+            <input id="field_dateTo" type="text" class="form-control" uib-datepicker-popup="{{dateformat}}" ng-model="promotion.dateTo" is-open="datePickerForDateTo.status.opened"
+            required/>
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default" ng-click="datePickerForDateToOpen($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+            </span>
+            <div ng-show="editForm.dateTo.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.dateTo.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.dateTo.$error.ZonedDateTimelocal" translate="entity.validation.ZonedDateTimelocal">
+                    This field should be a date and time.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="warehouseApp.promotion.description" for="field_description">Description</label>
+            <input type="text" class="form-control" name="description" id="field_description"
+                    ng-model="promotion.description"
+                     />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="warehouseApp.promotion.otherDetails" for="field_otherDetails">OtherDetails</label>
+            <input type="text" class="form-control" name="otherDetails" id="field_otherDetails"
+                    ng-model="promotion.otherDetails"
+                     />
+        </div>
+
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

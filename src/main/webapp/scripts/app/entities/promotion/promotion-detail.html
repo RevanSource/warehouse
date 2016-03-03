@@ -1,0 +1,62 @@
+
+<div>
+    <h2><span translate="warehouseApp.promotion.detail.title">Promotion</span> {{promotion.id}}</h2>
+    <div class="table-responsive">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th translate="entity.detail.field">Field</th>
+                <th translate="entity.detail.value">Value</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <span translate="warehouseApp.promotion.name">Name</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{promotion.name}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="warehouseApp.promotion.dateFrom">DateFrom</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{promotion.dateFrom | date:'medium'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="warehouseApp.promotion.dateTo">DateTo</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{promotion.dateTo | date:'medium'}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="warehouseApp.promotion.description">Description</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{promotion.description}}</span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span translate="warehouseApp.promotion.otherDetails">OtherDetails</span>
+                </td>
+                <td>
+                    <span class="form-control-static">{{promotion.otherDetails}}</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

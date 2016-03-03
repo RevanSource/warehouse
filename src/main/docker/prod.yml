@@ -1,0 +1,18 @@
+warehouse-elasticsearch:
+  container_name: warehouse-elasticsearch
+  image: elasticsearch:1.7.3
+  # volumes:
+  #   - ~/volumes/jhipster/warehouse/elasticsearch/:/usr/share/elasticsearch/data/
+  ports:
+    - "9200:9200"
+    - "9300:9300"
+warehouse-postgresql:
+  container_name: warehouse-postgresql
+  image: postgres:9.4.5
+  # volumes:
+  #   - ~/volumes/jhipster/warehouse/postgresql/:/var/lib/postgresql/
+  environment:
+    - POSTGRES_USER=warehouse
+    - POSTGRES_PASSWORD=
+  ports:
+    - "5432:5432"

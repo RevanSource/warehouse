@@ -1,0 +1,25 @@
+{
+  "generator-jhipster": {
+    "baseName": "warehouse",
+    "packageName": "com.ifmo.warehouse",
+    "packageFolder": "com/ifmo/warehouse",
+    "authenticationType": "session",
+    "hibernateCache": "no",
+    "clusteredHttpSession": "no",
+    "websocket": "spring-websocket",
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": "elasticsearch",
+    "useSass": true,
+    "buildTool": "maven",
+    "frontendBuilder": "grunt",
+    "enableTranslation": true,
+    "enableSocialSignIn": false,
+    "rememberMeKey": "5b5fa2bd19ab482c14674651d0ddbf2778e037c5",
+    "testFrameworks": [
+      "gatling",
+      "cucumber"
+    ]
+  }
+}

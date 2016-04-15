@@ -1,0 +1,48 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "productType",
+            "otherEntityName": "productType",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "price",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "currency",
+            "fieldType": "String"
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "otherDetails",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160303200151",
+    "dto": "no",
+    "service": "no",
+    "pagination": "infinite-scroll"
+}

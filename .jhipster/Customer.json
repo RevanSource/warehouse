@@ -1,0 +1,49 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "address",
+            "otherEntityName": "address",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "name",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "phone",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "email",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "otherDetails",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "changelogDate": "20160303194421",
+    "dto": "no",
+    "service": "no",
+    "pagination": "infinite-scroll"
+}

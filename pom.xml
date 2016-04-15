@@ -636,8 +636,8 @@
                     <driver>org.postgresql.Driver</driver>
                     <url>jdbc:postgresql://localhost:5432/warehouse</url>
                     <defaultSchemaName />
-                    <username>warehouse</username>
-                    <password />
+                    <username>postgres</username>
+                    <password>postgres</password>
                     <referenceUrl>hibernate:spring:com.ifmo.warehouse.domain?dialect=org.hibernate.dialect.PostgreSQL82Dialect</referenceUrl>
                     <verbose>true</verbose>
                     <logging>debug</logging>

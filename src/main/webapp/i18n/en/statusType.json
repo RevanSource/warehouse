@@ -1,0 +1,11 @@
+{
+    "warehouseApp": {
+        "StatusType" : {
+            "null": "",
+            "Pending": "Pending",
+            "InProgress": "InProgress",
+            "Completed": "Completed",
+            "Canceled": "Canceled"
+        }
+    }
+}

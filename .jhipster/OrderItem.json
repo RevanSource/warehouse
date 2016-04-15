@@ -1,0 +1,35 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "customerOrder",
+            "otherEntityName": "customerOrder",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "product",
+            "otherEntityName": "product",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        }
+    ],    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "quantity",
+            "fieldType": "Integer",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "otherDetails",
+            "fieldType": "String"
+        }
+    ],    "changelogDate": "20160303200241",
+    "dto": "no",
+    "service": "no",
+    "pagination": "infinite-scroll"
+}

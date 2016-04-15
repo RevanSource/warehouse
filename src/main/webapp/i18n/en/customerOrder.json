@@ -1,0 +1,28 @@
+{
+    "warehouseApp": {
+        "customerOrder" : {
+            "home": {
+                "title": "CustomerOrders",
+                "createLabel": "Create a new CustomerOrder",
+                "createOrEditLabel": "Create or edit a CustomerOrder",
+                "search": "Search for CustomerOrder"
+            },
+            "created": "A new CustomerOrder is created with identifier {{ param }}",
+            "updated": "A CustomerOrder is updated with identifier {{ param }}",
+            "deleted": "A CustomerOrder is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete CustomerOrder {{ id }}?"
+            },
+            "detail": {
+                "title": "CustomerOrder"
+            },
+            "orderDate": "OrderDate",
+            "plannedDeliveryDate": "PlannedDeliveryDate",
+            "actualDeliveryDate": "ActualDeliveryDate",
+            "status": "Status",
+            "otherDetails": "OtherDetails",
+            "store": "Store",
+            "customer": "Customer"
+        }
+    }
+}

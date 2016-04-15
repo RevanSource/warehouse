@@ -1,0 +1,59 @@
+{
+    "relationships": [
+        {
+            "relationshipId": 1,
+            "relationshipName": "store",
+            "otherEntityName": "store",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        },
+        {
+            "relationshipId": 2,
+            "relationshipName": "customer",
+            "otherEntityName": "customer",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "name"
+        }
+    ],
+    "fields": [
+        {
+            "fieldId": 1,
+            "fieldName": "orderDate",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 2,
+            "fieldName": "plannedDeliveryDate",
+            "fieldType": "ZonedDateTime",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 3,
+            "fieldName": "actualDeliveryDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldId": 4,
+            "fieldName": "status",
+            "fieldType": "StatusType",
+            "fieldValues": "Pending, InProgress, Completed, Canceled",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldId": 5,
+            "fieldName": "otherDetails",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20160303200316",
+    "dto": "no",
+    "service": "no",
+    "pagination": "infinite-scroll"
+}

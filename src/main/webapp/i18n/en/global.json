@@ -8,6 +8,13 @@
             "entities": {
                 "main": "Entities",
                 "promotion": "Promotion",
+                "address": "Address",
+                "store": "Store",
+                "customer": "Customer",
+                "productType": "ProductType",
+                "product": "Product",
+                "customerOrder": "CustomerOrder",
+                "orderItem": "OrderItem",
                 "jhipster-needle-menu-add-entry": "We will add additional entities here (do not translate!)"
             },
             "account": {
